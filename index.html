@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SDG's — Zero Hunger • MBG Indonesia 2025</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="loader">
+  <img src="images/logo.png" alt="Loading..." class="img-spinner">
+</div>
+
+
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <div class="brand">SDG's <span class="goal">Zero Hunger</span></div>
+    </div>
+  </nav>
+
+  <header class="hero reveal" role="banner">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>MBG — Program Ketahanan Pangan Indonesia 2025</h1>
+        <figure class="hero-figure" aria-hidden="true">
+          <!-- Pastikan file gambar berada di folder `images/` -->
+          <img src="/images/logo.png" alt="Ilustrasi bahan pangan lokal" loading="lazy">
+        </figure>
+        <p class="lead">Mengenalkan bahan pangan lokal sebagai solusi nutrisi berkualitas untuk mendukung SDG's Goal 2: <strong>Zero Hunger</strong>.</p>
+        <div class="hero-ctas">
+          <a href="#cards" class="btn">Jelajahi Bahan Lokal</a>
+          <a href="#about" class="btn ghost">Apa Itu G to Z?</a>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <section id="about" class="about-section reveal" aria-labelledby="about-title">
+      <div class="about-bg" aria-hidden="true"></div>
+
+      <div class="about-container container">
+        <h2 id="about-title" class="about-title">
+          <span class="gradient-text">G to Z!</span> — From Gen Z, Get to Know Gizi
+        </h2>
+
+        <p class="about-sub">
+          Edukasi gizi berbasis generasi muda: simple, fun, dan relevan.  
+          Karena sehat itu bukan tren, tapi masa depan.
+        </p>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <h3>✨ Apa itu Gizi?</h3>
+            <p>
+              Gizi adalah proses tubuh memperoleh dan menggunakan zat makanan.  
+              Nutrisi menentukan energi, fungsi otak, dan kesehatan jangka panjang.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>📚 Studi Literatur</h3>
+            <p>
+              WHO (2023) menyatakan gizi berperan penting dalam tumbuh kembang  
+              dan sistem tubuh. Gen Z cenderung kekurangan sayur, protein, dan mineral.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>⚡ Tantangan Gen Z</h3>
+            <p>
+              Fast food, minuman manis, dan pola makan tidak teratur  
+              meningkatkan risiko anemia, obesitas, dan kelelahan mental.
+            </p>
+          </div>
+
+          <div class="about-card">
+            <h3>🍽 Rekomendasi</h3>
+            <p>
+              Ikuti “Isi Piringku”: ½ buah & sayur,  
+              ¼ protein, dan ¼ karbohidrat — simpel dan efektif.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="cards" class="panel reveal" aria-labelledby="cards-title">
+      <div class="container">
+        <h2 id="cards-title">Komoditas Unggulan</h2>
+        <p class="muted">Ketuk <em>Detail</em> untuk membuka informasi lengkap — kandungan, manfaat medis, risiko, dan tips pengolahan.</p>
+
+        <div id="grid" class="grid" aria-live="polite"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal template (will be filled dynamically) -->
+  <div id="modal" class="modal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal-panel" role="document">
+      <button id="closeModal" class="modal-close" aria-label="Tutup modal">×</button>
+      <div id="modalBody" class="modal-body"></div>
+    </div>
+  </div>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <p>&copy; Kelompok 1 sains dasar berkelanjutan 2025 • Program Ketahanan Pangan — SDG's Zero Hunger</p>
+    </div>
+  </footer>
+
+  <!-- main script (script.js contains all interactions: grid, modal, reveal, parallax, smooth scroll) -->
+  <script src="script.js"></script>
+  <script>
+  window.addEventListener("load", () => {
+    const loader = document.getElementById("loader");
+
+    // waktu tampil (dalam ms) — contoh: 3000 = 3 detik
+    const duration = 1000;
+
+    setTimeout(() => {
+      loader.style.opacity = "0";
+      loader.style.transition = "0.6s ease";
+      setTimeout(() => loader.style.display = "none", 600);
+    }, duration);
+  });
+</script>
+
+
+</body>
+</html>
