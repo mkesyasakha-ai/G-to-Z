@@ -535,8 +535,7 @@ html{
 
 /* gambar spinner */
 .img-spinner {
-  width: 100%;
-  height: 100px;
+  width: 20rem;
   object-fit: cover;
   animation: spin 1.2s linear infinite;
 }
